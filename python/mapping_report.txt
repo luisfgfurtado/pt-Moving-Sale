@@ -1,0 +1,19 @@
+Relatório de Mapeamento CSV vs Pastas ZIP (Com Status de Reserva)
+==================================================================
+
+Itens a serem excluídos (conforme solicitado): ['Estante branco 77x77', 'Candeeiro de pé']
+Item marcado como RESERVADO (título PT): Tineco Floor One S5
+
+Total de itens no CSV (original): 39
+Total de itens no CSV considerados para mapeamento (após exclusões iniciais): 37
+Total de pastas encontradas no diretório ZIP (relevantes): 39
+
+Total de itens VALIDADOS e MAPEADOS com sucesso: 37
+
+Pastas encontradas no ZIP, mas SEM ITEM CORRESPONDENTE no CSV (ou item foi excluído):
+- Candeeiro de pé
+- Estante branco 77x77
+
+Dados processados dos itens mapeados foram salvos em: /home/ubuntu/site_bazar/processed_inventory_data.json
+==================================================================
+Fim do Relatório de Mapeamento.

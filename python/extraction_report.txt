@@ -1,0 +1,47 @@
+Relatório de Extração de Imagens e Descrições (Pós-Reset)
+===========================================================
+
+Total de itens processados para extração: 37
+Total de itens com dados completos (após extração): 37
+
+Problemas e Avisos durante a extração:
+- Item 'Radiador a Óleo 2500W' (Pasta: Radiador a Óleo 2500W, Linha CSV: 2): Descrição em Inglês ausente no description.docx. Usando descrição em PT como fallback.
+- Item 'Tineco Floor One S5' (Pasta: Tineco, Linha CSV: 3): Descrição em Inglês ausente no description.docx. Usando descrição em PT como fallback.
+- Item 'Banco alto, preto / velatura castanha, 63 cm' (Pasta: Banco alto, Linha CSV: 4): Descrição em Inglês ausente no description.docx. Usando descrição em PT como fallback.
+- Item 'Berço TRAMA Cama Cosleep Musa Branco/Tola' (Pasta: berço, Linha CSV: 6): Descrição em Inglês ausente no description.docx. Usando descrição em PT como fallback.
+- Item 'Poltrona, chapa de carvalho' (Pasta: poltrona, Linha CSV: 7): Descrição em Inglês ausente no description.docx. Usando descrição em PT como fallback.
+- Item 'Cadeira dobrável' (Pasta: Cadeira dobrável GUNDE, Linha CSV: 8): Descrição em Inglês ausente no description.docx. Usando descrição em PT como fallback.
+- Item 'Cadeira de Escritório Executiva MITSAI Roma Preto' (Pasta: Cadeira de Escritório Executiva MITSAI, Linha CSV: 9): Descrição em Inglês ausente no description.docx. Usando descrição em PT como fallback.
+- Item 'Cadeira escritório' (Pasta: Cadeira escritório, Linha CSV: 10): Descrição em Inglês ausente no description.docx. Usando descrição em PT como fallback.
+- Item 'Cadeira de Refeição KINDERKRAFT Yummy Grey' (Pasta: Cadeira de Refeição, Linha CSV: 11): Descrição em Inglês ausente no description.docx. Usando descrição em PT como fallback.
+- Item 'Conjunto de 4 x Cadeiras de jantar' (Pasta: Cadeiras sala, Linha CSV: 12): Descrição em Inglês ausente no description.docx. Usando descrição em PT como fallback.
+- Item 'Cama casal completa com cabeceira e colchão, branco, 160x200 cm' (Pasta: cama casal branca, Linha CSV: 13): Descrição em Inglês ausente no description.docx. Usando descrição em PT como fallback.
+- Item 'Cama de casal com cabeceira e colchão 140x200 cm' (Pasta: Cama casal - SLATTUM, Linha CSV: 14): Descrição em Inglês ausente no description.docx. Usando descrição em PT como fallback.
+- Item 'Cama de solteiro completa com colchão novo 90 x 190 cm' (Pasta: Cama solteiro, Linha CSV: 15): Descrição em Inglês ausente no description.docx. Usando descrição em PT como fallback.
+- Item 'Cómoda c/6 gavetas, branco, 138x84 cm' (Pasta: Cómoda 6 gavetas branco 138x84 cm, Linha CSV: 16): Descrição em Inglês ausente no description.docx. Usando descrição em PT como fallback.
+- Item 'Mixer Bosh' (Pasta: Varinha Mágica Bosh, Linha CSV: 17): Nenhuma imagem (.jpg, .jpeg, .png, .webp, .avif) encontrada na pasta de origem.
+- Item 'Mixer Bosh' (Pasta: Varinha Mágica Bosh, Linha CSV: 17): Descrição em Inglês ausente no description.docx. Usando descrição em PT como fallback.
+- Item 'Airfryer Philips' (Pasta: Fritadeira sem Óleo PHILIPS, Linha CSV: 18): Descrição em Inglês ausente no description.docx. Usando descrição em PT como fallback.
+- Item 'Espelho, ef carvalho 65x150 cm' (Pasta: Espelho retangular, Linha CSV: 19): Descrição em Inglês ausente no description.docx. Usando descrição em PT como fallback.
+- Item 'Espelho redondo - chapa de nogueira, 60 cm' (Pasta: Espelho redondo 60 cm, Linha CSV: 20): Descrição em Inglês ausente no description.docx. Usando descrição em PT como fallback.
+- Item 'Impressora Multifuncional Epson' (Pasta: Impressora Epson, Linha CSV: 22): Descrição em Inglês ausente no description.docx. Usando descrição em PT como fallback.
+- Item 'Caixote c/tampa, cinz clr, 22 l' (Pasta: Lixo HÅLLBAR (cozinha), Linha CSV: 23): Descrição em Inglês ausente no description.docx. Usando descrição em PT como fallback.
+- Item 'Caixote c/tampa de pressão, aço inoxidável, 4 l' (Pasta: Lixeira BROGRUND, Linha CSV: 25): Descrição em Inglês ausente no description.docx. Usando descrição em PT como fallback.
+- Item 'Secretária, branco, 142x50 cm' (Pasta: Secretaria branco 142x50, Linha CSV: 27): Descrição em Inglês ausente no description.docx. Usando descrição em PT como fallback.
+- Item 'Mesa, branco, 125x75 cm' (Pasta: Mesa sala, Linha CSV: 28): Descrição em Inglês ausente no description.docx. Usando descrição em PT como fallback.
+- Item 'Mesa, branco, 120x60 cm' (Pasta: mesa 120x60, Linha CSV: 29): Descrição em Inglês ausente no description.docx. Usando descrição em PT como fallback.
+- Item 'Secretária de trabalho com caveletes de altura ajustável 75 x 150 cm' (Pasta: Mesa 75 x 150 cm, Linha CSV: 30): Descrição em Inglês ausente no description.docx. Usando descrição em PT como fallback.
+- Item '2 x Monitores ASUS VZ24EHE (23.8'' - FHD - IPS)' (Pasta: Monitor ASUS VZ24EHE 23.8, Linha CSV: 31): Descrição em Inglês ausente no description.docx. Usando descrição em PT como fallback.
+- Item 'Jogo de panelas com 7 peças' (Pasta: Set 7 Peças - Trem De Cozinha TEFAL, Linha CSV: 32): Descrição em Inglês ausente no description.docx. Usando descrição em PT como fallback.
+- Item 'Estante de parede (prateleiras), branco, 110x26 cm' (Pasta: Estante de parede branco 110x26 cm, Linha CSV: 33): Descrição em Inglês ausente no description.docx. Usando descrição em PT como fallback.
+- Item 'LACK Estante de parede (prateleiras), branco, 190x26 cm' (Pasta: Estante de parede branco 190x26 cm, Linha CSV: 34): Descrição em Inglês ausente no description.docx. Usando descrição em PT como fallback.
+- Item 'Móvel TV, branco, 180x40x38 cm' (Pasta: Móvel TV branco 180x40x38 cm, Linha CSV: 35): Descrição em Inglês ausente no description.docx. Usando descrição em PT como fallback.
+- Item 'Sapateira' (Pasta: sapateira, Linha CSV: 36): Descrição em Inglês ausente no description.docx. Usando descrição em PT como fallback.
+- Item 'Sofá 3 lugares' (Pasta: sofa, Linha CSV: 37): Descrição em Inglês ausente no description.docx. Usando descrição em PT como fallback.
+- Item 'Tabua de passar roupa' (Pasta: Tábua de engomar sevilha, Linha CSV: 38): Descrição em Inglês ausente no description.docx. Usando descrição em PT como fallback.
+- Item 'TV LG 65NANO766QA' (Pasta: TV LG 65, Linha CSV: 39): Descrição em Inglês ausente no description.docx. Usando descrição em PT como fallback.
+
+Notas:
+- 'description_en_is_fallback': true indica que a descrição em Inglês foi copiada da Portuguesa por falta de uma versão em Inglês explícita no DOCX.
+===========================================================
+Fim do Relatório de Extração.

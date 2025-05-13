@@ -1,0 +1,10 @@
+# Arquivos e pastas do macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Arquivos de ícone gerados pelo macOS
+Icon?
+
+# Arquivos ocultos gerados pelo macOS
+._*
