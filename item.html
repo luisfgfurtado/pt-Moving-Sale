@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bazar de Mudança - Item</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
+</head>
+
+<body>
+    <header>
+        <h1><a href="index.html">Bazar de Mudança</a></h1>
+    </header>
+    <div class="container">
+        <div class="item-detail-container">
+            <h2 id="itemTitle"></h2>
+            <div class="highlight2 fade-in">🚚 Para compras superiores a 200 €, oferecemos entrega gratuita (em Faro e
+                arredores).</div>
+            <div class="item-gallery" id="itemGallery"></div>
+            <div class="item-description" id="itemDescription"></div>
+            <p id="itemPrice"></p>
+            <a href="" id="whatsAppLink" class="reserve-button" target="_blank" rel="noopener">Reservar via WhatsApp</a>
+        </div>
+
+    </div>
+    <footer>
+        <p>Todos os itens à venda. Contacte para mais informações.</p>
+        <p><a href="https://wa.me/351915722650" target="_blank" rel="noopener">WhatsApp: +351915722650</a> | Faro |
+            Algarve | Portugal
+        </p>
+    </footer>
+    <script>
+        // Wait for DOM to be loaded
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get item ID from URL
+            const urlParams = new URLSearchParams(window.location.search);
+            const itemId = urlParams.get('id');
+
+            if (!itemId) {
+                console.error('No item ID found in URL');
+                window.location.href = 'index.html';
+                return;
+            }
+
+            // Load item data
+            async function loadItem() {
+                try {
+                    console.log('Loading item with ID:', itemId);
+                    const response = await fetch('items.json');
+                    const items = await response.json();
+
+                    // Debug logging
+                    const item = items.find(i => i.id === itemId);
+
+                    if (!item) {
+                        console.error('Item not found with ID:', itemId);
+                        window.location.href = 'index.html';
+                        return;
+                    }
+
+                    // Update title and WhatsApp link
+                    document.title = `Bazar de Mudança - ${item.title}`;
+                    const whatsAppLink = document.getElementById('whatsAppLink');
+                    const encodedTitle = encodeURIComponent(item.title);
+                    whatsAppLink.href = `https://wa.me/+351915722650?text=Fiquei%20interessado%20no%20${encodedTitle}`;
+
+                    // Update description
+                    const title = document.getElementById('itemTitle');
+                    if (item.title) {
+                        // Decode HTML
+                        const parser = new DOMParser();
+                        const decodedHtml = parser.parseFromString(item.title, 'text/html').body.innerHTML;
+                        title.innerHTML = decodedHtml;
+                    }
+
+                    // Update gallery
+                    const gallery = document.getElementById('itemGallery');
+                    gallery.innerHTML = `
+                            ${item.images.map(img => `
+                                <a href="${img}" data-lightbox="${img}" data-title="${item.title}">
+                                    <img src="${img}" alt="${item.title}" class="gallery-image">
+                                </a>
+                            `).join('')}
+                    `;
+
+                    // Update description
+                    const description = document.getElementById('itemDescription');
+                    if (item.description) {
+                        // Remove HTML entities and set innerHTML directly
+                        const decodedHtml = item.description.replace(/&lt;/g, '<').replace(/&gt;/g, '>');
+                        description.innerHTML = decodedHtml;
+                    } else {
+                        description.innerHTML = '<p>Sem descrição disponível.</p>';
+                    }
+
+                    // Update price
+                    const price = document.getElementById('itemPrice');
+                    price.innerHTML = `
+                        <span class="price-old">${item.price_old || ''}</span>
+                        <span class="price">${item.price || ''}</span>
+                    `;
+
+                    // Initialize Lightbox after content is loaded
+                    if (typeof lightbox !== 'undefined') {
+                        lightbox.option({
+                            'resizeDuration': 200,
+                            'wrapAround': true
+                        });
+                    } else {
+                        console.error('Lightbox library not loaded');
+                    }
+
+                } catch (error) {
+                    console.error('Error loading item:', error);
+                    window.location.href = 'index.html';
+                }
+            }
+
+            // Load item
+            loadItem();
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
