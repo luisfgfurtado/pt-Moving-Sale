@@ -222,10 +222,8 @@ for item in items:
 </head>
 <body>
     <header>
-        <h1><a href="index-pt.html">Bazar de Mudança</a></h1>
-        <div class="lang-switcher-item">
-            <a href="{page_url_en_for_pt_page}">English</a>
-        </div>
+        <h1><a href="index.html">Bazar de Mudança</a></h1>
+        
     </header>
     <div class="container">
         <div class="item-detail-container">
@@ -277,9 +275,7 @@ for item in items:
 <body>
     <header>
         <h1><a href="index-en.html">Moving Sale Bazaar</a></h1>
-        <div class="lang-switcher-item">
-            <a href="{page_url_pt_for_en_page}">Português</a>
-        </div>
+        
     </header>
     <div class="container">
         <div class="item-detail-container">

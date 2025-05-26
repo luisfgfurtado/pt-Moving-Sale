@@ -45,7 +45,7 @@ index_pt_content = f"""
 </head>
 <body>
     <header>
-        <h1><a href="index-pt.html">Bazar de Mudança</a></h1>
+        <h1><a href="index.html">Bazar de Mudança</a></h1>
         <div class="lang-switcher-home">
             <a href="index-en.html">🇬🇧 En</a>
         </div>
@@ -109,7 +109,7 @@ index_en_content = f"""
     <header>
         <h1><a href="index-en.html">Moving Sale Bazaar</a></h1>
         <div class="lang-switcher-home">
-            <a href="index-pt.html">🇵🇹 Pt</a>
+            <a href="index.html">🇵🇹 Pt</a>
         </div>
     </header>
     <div class="container">

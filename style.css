@@ -34,6 +34,40 @@ header h1 a {
   background-color: #e0f7fa;
   padding: 5px 10px;
   border-radius: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+.highlight2 {
+  background-color: #faeee0;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.availability-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.availability-info {
+  flex: 1;
+}
+
+.price-info {
+  text-align: right;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 5px;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }
 .lang-switcher-home a,
 .lang-switcher-item a {
@@ -44,8 +78,8 @@ header h1 a {
 }
 .container {
   max-width: 1200px;
-  margin: 40px auto;
-  padding: 0 20px;
+  margin: 10px auto;
+  padding: 0;
 }
 
 /* Homepage Card Styles */
@@ -115,11 +149,26 @@ header h1 a {
   justify-content: space-between; /* Push status text to the right if needed, or manage spacing */
 }
 .item-card .price {
-  font-size: 1.15em;
+  font-size: 1.4em;
   font-weight: 600;
   color: #007aff;
   margin-bottom: 0;
   margin-right: 8px; /* Space between price and status */
+}
+.item-card .price-old {
+  font-size: 1em;
+  text-decoration: line-through; 
+  color: rgb(180, 178, 178);
+}
+.price-old {
+  font-size: 1.2em;
+  text-decoration: line-through; 
+  color: rgb(180, 178, 178);
+}
+.price {
+  font-size: 1.8em;
+  font-weight: 600;
+  color: #007aff;
 }
 .item-card .status-text {
   font-size: 0.9em;
@@ -178,6 +227,10 @@ header h1 a {
 }
 .reserve-button:hover {
   background-color: #005ecb;
+}
+.item-disabled {
+  filter: grayscale(100%);
+  opacity: 0.5;
 }
 
 footer {
